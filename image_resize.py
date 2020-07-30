@@ -4,7 +4,7 @@ from PIL import Image, ImageOps
 import os
 import sys
 
-path = '/Users/brianclauser/pdf to image resized'
+path = '/Users/brianclauser/pdfconversion/resized'
 
 
 def newsize():
