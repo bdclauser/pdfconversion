@@ -10,7 +10,7 @@ path = '/Users/brianclauser/pdfconversion/resized'
 def newsize():
     os.makedirs('resized', exist_ok=True)
     for filename in os.listdir('.'):
-        if not (filename.endswith('.png') or filename.endswith('jpg')):
+        if not (filename.endswith('.png') or filename.endswith('jpg') or filename.endswith('jpeg')):
             continue  # skip non-image files
         im = Image.open(filename)
         print('Resizing %s...' % (filename))
