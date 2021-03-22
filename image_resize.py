@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from PIL import Image, ImageOps
 import os
 import sys
@@ -14,5 +16,3 @@ def newsize():
         print('Resizing %s...' % (filename))
         imResize = im.resize((800, 600), Image.ANTIALIAS)
         imResize.save(os.path.join(path, filename.replace("png", "jpg")))
-
-    return newsize()
